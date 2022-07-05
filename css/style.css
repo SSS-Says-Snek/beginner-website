@@ -16,11 +16,11 @@ li.navbar {
 
 li.navbar a {
     display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+    color: #F8F0E3;
     background-color: #0038a8;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 16px;
 }
 
 li.navbar a:hover {
@@ -37,13 +37,30 @@ p {
 
 button {
     border-radius: 3px;
-    font-size: 24px;
+    outline: none;
     color: white;
     background-color: #0038a8;
     border-color:#191970;
-    outline: none;
+    font-size: 24px;
 }
 
 button:hover {
     background-color:#191970;
+}
+
+.fade-in {
+	opacity: 1;
+	animation-name: fade_in_opacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 2s;
+}
+
+@keyframes fade_in_opacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
